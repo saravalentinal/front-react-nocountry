@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import FetchApi from "./API/FetchApi";
 
 export default function Login() {
 
@@ -53,11 +52,11 @@ export default function Login() {
 
             <h1 className="login-title">Iniciá Sesión</h1>
 
-            <label for="exampleuserinput" className="user-label">Usuario</label>
+            <label htmlFor="exampleuserinput" className="user-label">Usuario</label>
             <input type="text" placeholder="RamiroCosa" name="userForm" required></input>
             {renderErrorMessage("userForm")}
 
-            <label for="exampleuserpassword" className="password-label">Contraseña</label>
+            <label htmlFor="exampleuserpassword" className="password-label">Contraseña</label>
             <input type="password" name="passForm" required></input>
             {renderErrorMessage("passForm")}
                     

@@ -1,20 +1,17 @@
 import './App.css';
-import Login from './components/Login'
-import AdminHome from './components/AdminHome'
-import ListProfessionals from './components/ListProfessionals'
-import {Routes, Route} from 'react-router-dom'
-import FetchApi from './components/API/FetchApi';
-
+import React from 'react'
+import ListProfessionals from './components/ListProfessionals';
+import Login from './components/Login';
 
 function App() {
+
   return (
     <div className='main-app-div'>
 
-      <FetchApi></FetchApi>
-      <Login></Login>
+      <ListProfessionals></ListProfessionals>
 
     </div>
   );
-}
+} 
 
 export default App;
